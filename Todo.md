@@ -1,1 +1,7 @@
-- What is this?
+- [x] barebones version
+- [x] save & load
+- [ ] [ ] function
+- [ ] ability to edit
+- [ ] Jsonfy
+- [ ] UI
+- [ ] GUI

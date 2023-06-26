@@ -1,5 +1,4 @@
 Cactus needs watering
 Chicken needs dinner
 Xatu uses Air Slash
-- [ ] function
 Patrick needs stars
