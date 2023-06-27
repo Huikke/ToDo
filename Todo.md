@@ -3,5 +3,5 @@
 - [ ] [ ] function
 - [ ] ability to edit
 - [ ] Jsonfy
-- [ ] UI
+- [x] UI
 - [ ] GUI
