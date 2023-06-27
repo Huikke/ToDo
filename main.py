@@ -3,19 +3,29 @@ todolist = []
 # Load list from file
 with open("ToDo.txt") as file:
     for entry in file:
-        todolist.append(entry.strip())
+        entry = [entry[3], entry[6:].strip()]
+        todolist.append(entry)
 
 # Make entries
 def add_entry(title):
-    entry = title
+    entry = [" ", title]
     todolist.append(entry)
-    print(f"Added {entry} in the list")
+    print(f"Added {entry[1]} in the list")
+
+# Change To Do status between " " and "x"
+def change_status(index):
+    if todolist[index - 1][0] == " ":
+        todolist[index - 1][0] = "x"
+        print(f"{todolist[index - 1][1]} completed!")
+    else:
+        todolist[index - 1][0] = " "
+        print(f"{todolist[index - 1][1]} completion reverted")
 
 # Print list
 def display():
     print("Your To Do list:")
     for index, entry in enumerate(todolist):
-        print(f"{index + 1}. {entry}")
+        print(f"{index + 1}. [{entry[0]}] {entry[1]}")
 
 # Print UI
 def ui():
@@ -39,8 +49,7 @@ while True:
     if choice == "1":
         add_entry(input("Task title: "))
     elif choice == "2":
-        #TODO
-        print("WIP")
+        change_status(int(input("Entry index: ")))
     elif choice == "3":
         #TODO
         print("WIP")
@@ -56,6 +65,7 @@ while True:
 # Save to file
 with open("ToDo.txt", "w") as file:
     for index, entry in enumerate(todolist):
+        entry = f"- [{entry[0]}] {entry[1]}"
         file.write(entry)
         if index + 1 != len(todolist):
             file.write("\n")

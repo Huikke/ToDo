@@ -1,7 +1,8 @@
 - [x] barebones version
 - [x] save & load
-- [ ] [ ] function
-- [ ] ability to edit
+- [x] [x] function
+- [x] ability to edit
+- [ ] ability to delete
 - [ ] Jsonfy
 - [x] UI
 - [ ] GUI

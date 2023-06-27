@@ -1,6 +1,8 @@
-Cactus needs watering
-Chicken needs dinner
-Xatu uses Air Slash
-Patrick needs stars
-Chickens are fluoptuous
-Close the internet
+- [ ] Cactus needs watering
+- [x] Chicken needs dinner
+- [ ] Xatu uses Air Slash
+- [ ] Patrick needs stars
+- [ ] Chickens are fluoptuous
+- [ ] Close the internet
+- [x] Go collect taxes
+- [ ] Retrieve The Golden Axe
