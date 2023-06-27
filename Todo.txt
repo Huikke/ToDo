@@ -2,7 +2,7 @@
 - [x] Chicken needs dinner
 - [ ] Xatu uses Air Slash
 - [ ] Patrick needs stars
-- [ ] Chickens are fluoptuous
 - [ ] Close the internet
 - [x] Go collect taxes
-- [ ] Retrieve The Golden Axe
+- [x] Retrieve The Golden Axe
+- [ ] Mine obsidians

@@ -2,7 +2,7 @@
 - [x] save & load
 - [x] [x] function
 - [x] ability to edit
-- [ ] ability to delete
+- [x] ability to delete
 - [ ] Jsonfy
 - [x] UI
 - [ ] GUI

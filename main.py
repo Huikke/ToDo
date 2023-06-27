@@ -6,20 +6,25 @@ with open("ToDo.txt") as file:
         entry = [entry[3], entry[6:].strip()]
         todolist.append(entry)
 
-# Make entries
+# Make an entry
 def add_entry(title):
     entry = [" ", title]
     todolist.append(entry)
-    print(f"Added {entry[1]} in the list")
+    print(f"Added '{entry[1]}' in the list")
 
-# Change To Do status between " " and "x"
+# Change an entry status between " " and "x"
 def change_status(index):
     if todolist[index - 1][0] == " ":
         todolist[index - 1][0] = "x"
-        print(f"{todolist[index - 1][1]} completed!")
+        print(f"'{todolist[index - 1][1]}' completed!")
     else:
         todolist[index - 1][0] = " "
-        print(f"{todolist[index - 1][1]} completion reverted")
+        print(f"'{todolist[index - 1][1]}' completion reverted")
+
+# Delete an entry
+def delete_entry(index):
+    print(f"Deleted '{todolist[index - 1][1]}' from the list")
+    del todolist[index - 1]
 
 # Print list
 def display():
@@ -51,8 +56,7 @@ while True:
     elif choice == "2":
         change_status(int(input("Entry index: ")))
     elif choice == "3":
-        #TODO
-        print("WIP")
+        delete_entry(int(input("Delete entry index: ")))
     elif choice == "4":
         print()
         display()
