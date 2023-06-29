@@ -3,6 +3,7 @@
 - [x] [x] function
 - [x] ability to edit
 - [x] ability to delete
-- [ ] Jsonfy
+- [x] Jsonfy
+- [ ] convert back to md
 - [x] UI
 - [ ] GUI

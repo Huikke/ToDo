@@ -1,36 +1,36 @@
-todolist = []
+import json
 
 # Load list from file
-with open("ToDo.txt") as file:
-    for entry in file:
-        entry = [entry[3], entry[6:].strip()]
-        todolist.append(entry)
+with open("ToDo.json") as file:
+    data = json.load(file)
+    todolist = [e for e in data]
 
 # Make an entry
 def add_entry(title):
-    entry = [" ", title]
+    entry = {"state": False, "title": title}
     todolist.append(entry)
-    print(f"Added '{entry[1]}' in the list")
+    print(f"Added '{entry['title']}' in the list")
 
-# Change an entry status between " " and "x"
+# Change an entry status
 def change_status(index):
-    if todolist[index - 1][0] == " ":
-        todolist[index - 1][0] = "x"
-        print(f"'{todolist[index - 1][1]}' completed!")
+    if todolist[index - 1]["state"] == False:
+        todolist[index - 1]["state"] = True
+        print(f"'{todolist[index - 1]['title']}' completed!")
     else:
-        todolist[index - 1][0] = " "
-        print(f"'{todolist[index - 1][1]}' completion reverted")
+        todolist[index - 1]["state"] = False
+        print(f"'{todolist[index - 1]['title']}' completion reverted")
 
 # Delete an entry
 def delete_entry(index):
-    print(f"Deleted '{todolist[index - 1][1]}' from the list")
+    print(f"Deleted '{todolist[index - 1]['title']}' from the list")
     del todolist[index - 1]
 
 # Print list
 def display():
     print("Your To Do list:")
     for index, entry in enumerate(todolist):
-        print(f"{index + 1}. [{entry[0]}] {entry[1]}")
+        checkmark = "x" if entry['state'] == True else " "
+        print(f"{index + 1}. [{checkmark}] {entry['title']}")
 
 # Print UI
 def ui():
@@ -67,9 +67,6 @@ while True:
     print()
 
 # Save to file
-with open("ToDo.txt", "w") as file:
-    for index, entry in enumerate(todolist):
-        entry = f"- [{entry[0]}] {entry[1]}"
-        file.write(entry)
-        if index + 1 != len(todolist):
-            file.write("\n")
+with open("ToDo.json", "w") as file:
+    data = json.dumps(todolist)
+    file.write(data)
