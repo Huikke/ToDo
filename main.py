@@ -34,15 +34,19 @@ def delete_entry(index):
     print(f"Deleted '{todolist[index]['title']}' from the list")
     del todolist[index]
 
+# Timezone offset
+def timezone_convert(date):
+    utc_offset = datetime.now() - datetime.utcnow()
+    return date + utc_offset
+
 # View timeline
 def entry_timeline(index):
     print(f"'{todolist[index]['title']}' timeline:")
-
-    creation_time = datetime.fromisoformat(todolist[index]["creation_time"]).strftime("%d/%Y/%m %H:%M")
+    creation_time = timezone_convert(datetime.fromisoformat(todolist[index]["creation_time"])).strftime("%d/%Y/%m %H:%M")
     print(f"Created: {creation_time}")
 
     if todolist[index]['completion_time'] != None:
-        completion_time = datetime.fromisoformat(todolist[index]["completion_time"]).strftime("%d/%Y/%m %H:%M")
+        completion_time = timezone_convert(datetime.fromisoformat(todolist[index]["completion_time"])).strftime("%d/%Y/%m %H:%M")
         print(f"Completed: {completion_time}")
 
 # Print list

@@ -1,11 +1,15 @@
+Features:
 - [x] barebones version
 - [x] save & load
 - [x] [x] function
 - [x] ability to edit
 - [x] ability to delete
 - [x] Jsonfy
-- [ ] add datetime
+- [x] add timeline
 - [ ] convert json to md
 - [ ] convert md to json
 - [x] UI
 - [ ] GUI
+
+Fixes:
+- [ ] Detected invalid index
