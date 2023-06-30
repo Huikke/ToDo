@@ -1,1 +1,41 @@
-[{"state": true, "title": "Store data as json"}, {"state": false, "title": "Make GUI using tkinter"}]
+[
+    {
+        "state": true,
+        "title": "Store data as json"
+    },
+    {
+        "state": false,
+        "title": "Make GUI using tkinter"
+    },
+    {
+        "state": true,
+        "title": "Lol",
+        "creation_date": "2023-06-30T06:02:28.132529",
+        "completion_date": null,
+        "completion_time": "2023-06-30T05:18:30+00:00"
+    },
+    {
+        "state": true,
+        "title": "Make Finland great again",
+        "creation_date": "2023-06-30T04:48:27+00:00",
+        "completion_time": "2023-06-30T05:18:32+00:00"
+    },
+    {
+        "state": true,
+        "title": "FEN board",
+        "creation_date": "2023-06-30T04:49:54+00:00",
+        "completion_date": "2023-06-30T04:52:43+00:00"
+    },
+    {
+        "state": false,
+        "title": "Nerf Mega Knight",
+        "creation_date": "2023-06-30T04:52:18+00:00",
+        "completion_date": null
+    },
+    {
+        "state": false,
+        "title": "Timeline is here!",
+        "creation_time": "2023-06-30T05:18:23+00:00",
+        "completion_time": null
+    }
+]

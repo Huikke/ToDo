@@ -4,6 +4,8 @@
 - [x] ability to edit
 - [x] ability to delete
 - [x] Jsonfy
-- [ ] convert back to md
+- [ ] add datetime
+- [ ] convert json to md
+- [ ] convert md to json
 - [x] UI
 - [ ] GUI
