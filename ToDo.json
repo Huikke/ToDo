@@ -19,8 +19,26 @@
     },
     {
         "state": false,
-        "title": "Make chicken dinner",
+        "title": "Make vegan dinner",
         "creation_time": "2023-06-30T06:56:48+00:00",
+        "completion_time": null
+    },
+    {
+        "state": false,
+        "title": "Web Scraping",
+        "creation_time": "2023-06-30T23:48:02+00:00",
+        "completion_time": null
+    },
+    {
+        "state": false,
+        "title": "Linux laptop",
+        "creation_time": "2023-06-30T23:48:08+00:00",
+        "completion_time": null
+    },
+    {
+        "state": false,
+        "title": "Scripting",
+        "creation_time": "2023-06-30T23:48:14+00:00",
         "completion_time": null
     }
 ]

@@ -29,6 +29,12 @@ def change_status(index):
         todolist[index]["completion_time"] = None
         print(f"'{todolist[index]['title']}' completion reverted")
 
+# Change an entry title
+def change_title(index, new_title):
+    old_title = todolist[index]["title"]
+    todolist[index]["title"] = new_title
+    print(f"'{old_title}' changed to '{new_title}'")
+
 # Delete an entry
 def delete_entry(index):
     print(f"Deleted '{todolist[index]['title']}' from the list")
@@ -61,9 +67,10 @@ def ui():
     print("Choose action:")
     print("1. Add task")
     print("2. Complete task")
-    print("3. Delete task")
-    print("4. Print To Do list")
-    print("5. View task timeline")
+    print("3. Change task title")
+    print("4. Delete task")
+    print("5. Print To Do list")
+    print("6. View task timeline")
     print("0. End program & save to file")
 
 # Main loop
@@ -81,11 +88,13 @@ while True:
     elif choice == "2":
         change_status(int(input("Entry index: ")) - 1)
     elif choice == "3":
-        delete_entry(int(input("Delete entry index: ")) - 1)
+        change_title(int(input("Entry index: ")) - 1, input("New title: "))
     elif choice == "4":
+        delete_entry(int(input("Delete entry index: ")) - 1)
+    elif choice == "5":
         print()
         display()
-    elif choice == "5":
+    elif choice == "6":
         entry_timeline(int(input("Entry index: ")) - 1)
     elif choice == "0":
         break
