@@ -27,19 +27,19 @@
         "state": true,
         "title": "Web Scraping",
         "creation_time": "2023-06-30T23:48:02+00:00",
-        "completion_time": null
+        "completion_time": "2023-07-30T22:38:44+00:00"
     },
     {
-        "state": true,
+        "state": false,
         "title": "Linux laptop",
         "creation_time": "2023-06-30T23:48:08+00:00",
         "completion_time": null
     },
     {
-        "state": false,
+        "state": true,
         "title": "Scripting",
         "creation_time": "2023-06-30T23:48:14+00:00",
-        "completion_time": null
+        "completion_time": "2023-07-30T22:38:30+00:00"
     },
     {
         "state": false,
@@ -52,5 +52,11 @@
         "title": "Conquer the world",
         "creation_time": "2023-07-30T21:46:16+00:00",
         "completion_time": null
+    },
+    {
+        "state": true,
+        "title": "Recreate Mona Lisa",
+        "creation_time": "2023-07-30T22:39:26+00:00",
+        "completion_time": "2023-07-30T22:39:44+00:00"
     }
 ]

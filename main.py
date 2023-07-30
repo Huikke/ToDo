@@ -19,7 +19,7 @@ def save_to_file(todo_list):
         file.write(data)
 
 # Make an entry
-def add_entry(title, todo_list):
+def add_entry(todo_list, title):
     entry = {
         "state": False,
         "title": title,
@@ -31,7 +31,7 @@ def add_entry(title, todo_list):
     print(f"Added '{entry['title']}' in the list")
 
 # Change an entry status
-def change_status(index):
+def change_status(todo_list, index):
     if todo_list[index]["state"] == False:
         todo_list[index]["state"] = True
         todo_list[index]["completion_time"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -99,9 +99,9 @@ if __name__ == "__main__":
 
         choice = input("Input: ")
         if choice == "1":
-            add_entry(input("Task title: "), todo_list)
+            add_entry(todo_list, input("Task title: "))
         elif choice == "2":
-            change_status(int(input("Entry index: ")) - 1)
+            change_status(todo_list, int(input("Entry index: ")) - 1)
         elif choice == "3":
             change_title(int(input("Entry index: ")) - 1, input("New title: "))
         elif choice == "4":
