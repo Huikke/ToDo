@@ -24,13 +24,13 @@
         "completion_time": null
     },
     {
-        "state": false,
+        "state": true,
         "title": "Web Scraping",
         "creation_time": "2023-06-30T23:48:02+00:00",
         "completion_time": null
     },
     {
-        "state": false,
+        "state": true,
         "title": "Linux laptop",
         "creation_time": "2023-06-30T23:48:08+00:00",
         "completion_time": null
@@ -45,6 +45,12 @@
         "state": false,
         "title": "Buy a tent",
         "creation_time": "2023-07-30T01:09:34+00:00",
+        "completion_time": null
+    },
+    {
+        "state": false,
+        "title": "Conquer the world",
+        "creation_time": "2023-07-30T21:46:16+00:00",
         "completion_time": null
     }
 ]

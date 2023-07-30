@@ -1,3 +1,5 @@
+# ToDo List text-based version
+# GUI also uses these functions
 import json
 from datetime import datetime, timezone
 
@@ -11,13 +13,13 @@ def load_from_file():
     return todo_list
 
 # Save list to a file
-def save_to_file():
+def save_to_file(todo_list):
     with open("ToDo.json", "w") as file:
         data = json.dumps(todo_list, indent=4)
         file.write(data)
 
 # Make an entry
-def add_entry(title):
+def add_entry(title, todo_list):
     entry = {
         "state": False,
         "title": title,
@@ -97,7 +99,7 @@ if __name__ == "__main__":
 
         choice = input("Input: ")
         if choice == "1":
-            add_entry(input("Task title: "))
+            add_entry(input("Task title: "), todo_list)
         elif choice == "2":
             change_status(int(input("Entry index: ")) - 1)
         elif choice == "3":
@@ -110,7 +112,7 @@ if __name__ == "__main__":
         elif choice == "6":
             entry_timeline(int(input("Entry index: ")) - 1)
         elif choice == "0":
-            save_to_file()
+            save_to_file(todo_list)
             break
         else:
             print("Invalid Input!")
