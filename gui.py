@@ -1,4 +1,6 @@
+# Gui for ToDo List program
 from tkinter import *
+from tkinter import messagebox
 import main
 
 # Create the Tkinter application window
@@ -54,10 +56,16 @@ total_stats()
 # Function adds new entries to to do list
 def add_entry():
     global row_number
+    entry_title = entrybox.get()
+
+    # Pop up error when entrybox is empty
+    if entry_title == "":
+        messagebox.showerror("Error", "Empty entry")
+        return
 
     # Create a new checkbutton
     var = BooleanVar()
-    checkbox = Checkbutton(root, text=entrybox.get(), variable=var)
+    checkbox = Checkbutton(root, text=entry_title, variable=var)
     checkbox.grid(row=row_number)
     entrybox.delete(0, END)
     # Add the new checkbutton to todo_lsit
