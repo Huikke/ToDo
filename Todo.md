@@ -10,7 +10,8 @@ Features:
 - [ ] convert json to md
 - [ ] convert md to json
 - [x] UI
-- [ ] GUI
+- [x] GUI
+    - Basically have to implement the whole thing again
 - [ ] Database
 
 Fixes:

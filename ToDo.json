@@ -6,16 +6,16 @@
         "completion_time": "2023-06-30T06:56:02+00:00"
     },
     {
-        "state": false,
+        "state": true,
         "title": "Make GUI using tkinter",
         "creation_time": "2023-06-30T06:56:18+00:00",
-        "completion_time": null
+        "completion_time": "2023-09-23T20:35:44+00:00"
     },
     {
         "state": true,
         "title": "Make timeline",
         "creation_time": "2023-06-30T06:56:32+00:00",
-        "completion_time": "2023-06-30T06:56:34+00:00"
+        "completion_time": "2023-09-23T20:35:52+00:00"
     },
     {
         "state": false,
@@ -30,16 +30,16 @@
         "completion_time": "2023-07-30T22:38:44+00:00"
     },
     {
-        "state": false,
+        "state": true,
         "title": "Linux laptop",
         "creation_time": "2023-06-30T23:48:08+00:00",
-        "completion_time": null
+        "completion_time": "2023-10-14T22:23:31+00:00"
     },
     {
-        "state": true,
+        "state": false,
         "title": "Scripting",
         "creation_time": "2023-06-30T23:48:14+00:00",
-        "completion_time": "2023-07-30T22:38:30+00:00"
+        "completion_time": null
     },
     {
         "state": false,
@@ -58,5 +58,11 @@
         "title": "Recreate Mona Lisa",
         "creation_time": "2023-07-30T22:39:26+00:00",
         "completion_time": "2023-07-30T22:39:44+00:00"
+    },
+    {
+        "state": true,
+        "title": "Notebook.exe",
+        "creation_time": "2023-10-14T22:23:22+00:00",
+        "completion_time": "2023-10-14T22:23:28+00:00"
     }
 ]
